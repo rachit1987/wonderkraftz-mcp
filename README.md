@@ -22,7 +22,7 @@ An MCP (Model Context Protocol) server that connects AI assistants to the [Wonde
 
 ```bash
 SHOPIFY_STORE_DOMAIN=64cd5c-2.myshopify.com \
-SHOPIFY_STOREFRONT_ACCESS_TOKEN=your-token \
+SHOPIFY_STOREFRONT_ACCESS_TOKEN=aeeec5ab77309d1c339d2971f56b6506 \
 npx wonderkraftz-mcp
 ```
 
@@ -46,7 +46,7 @@ Add to your project's `.cursor/mcp.json`:
       "args": ["-y", "wonderkraftz-mcp"],
       "env": {
         "SHOPIFY_STORE_DOMAIN": "64cd5c-2.myshopify.com",
-        "SHOPIFY_STOREFRONT_ACCESS_TOKEN": "your-token"
+        "SHOPIFY_STOREFRONT_ACCESS_TOKEN": "aeeec5ab77309d1c339d2971f56b6506"
       }
     }
   }
@@ -65,7 +65,7 @@ Add to `claude_desktop_config.json`:
       "args": ["-y", "wonderkraftz-mcp"],
       "env": {
         "SHOPIFY_STORE_DOMAIN": "64cd5c-2.myshopify.com",
-        "SHOPIFY_STOREFRONT_ACCESS_TOKEN": "your-token"
+        "SHOPIFY_STOREFRONT_ACCESS_TOKEN": "aeeec5ab77309d1c339d2971f56b6506"
       }
     }
   }
@@ -78,7 +78,7 @@ Use the HTTP transport for cloud-hosted AI tools:
 
 ```bash
 SHOPIFY_STORE_DOMAIN=64cd5c-2.myshopify.com \
-SHOPIFY_STOREFRONT_ACCESS_TOKEN=your-token \
+SHOPIFY_STOREFRONT_ACCESS_TOKEN=aeeec5ab77309d1c339d2971f56b6506 \
 npx wonderkraftz-mcp-http
 ```
 
