@@ -4,3 +4,4 @@ dist/
 *.tsbuildinfo
 .cursor/
 .DS_Store
+.mcpregistry_*
