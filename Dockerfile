@@ -1,11 +1,11 @@
 FROM node:20-slim
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci
 COPY src/ ./src/
 COPY tsconfig.json ./
 COPY server.json ./
-RUN npm run build
+RUN npm ci --ignore-scripts
+RUN npx tsc
 RUN npm prune --omit=dev
 ENV PORT=3000
 EXPOSE 3000
