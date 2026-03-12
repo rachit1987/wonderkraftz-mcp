@@ -72,9 +72,19 @@ Add to `claude_desktop_config.json`:
 }
 ```
 
-### ChatGPT (Developer Mode)
+### ChatGPT / Grok / Remote AI Tools
 
-Use the HTTP transport for cloud-hosted AI tools:
+Use the hosted HTTP endpoint -- no install needed:
+
+```
+https://wonderkraftz-mcp.onrender.com/mcp
+```
+
+Point your MCP client to this URL. It supports Streamable HTTP transport.
+
+### Self-Hosted HTTP (optional)
+
+To run the HTTP transport yourself:
 
 ```bash
 SHOPIFY_STORE_DOMAIN=64cd5c-2.myshopify.com \
@@ -83,14 +93,6 @@ npx wonderkraftz-mcp-http
 ```
 
 The server starts on `http://localhost:3000/mcp` (or set `PORT` env var).
-
-### Grok / Other Remote AI Tools
-
-Point your MCP client to the HTTP endpoint:
-
-```
-http://your-server:3000/mcp
-```
 
 ## Transports
 
